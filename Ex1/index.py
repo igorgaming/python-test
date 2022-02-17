@@ -13,9 +13,10 @@ class Parallelepiped:
     def get_side_square(self):
         return 2 * (self.width * self.height + self.length * self.height)
 
-    @classmethod
-    def info(cls):
-        return dir(cls)
+    @staticmethod
+    def info():
+        return dir(Parallelepiped)
 
 figure = Parallelepiped(10, 15, 20)
 print(f"Volume = {figure.get_volume()}, Base square = {figure.get_base_square()}, Side square = {figure.get_side_square()}")
+print(f"Methods: {Parallelepiped.info()}")
