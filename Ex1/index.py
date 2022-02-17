@@ -15,8 +15,8 @@ class Parallelepiped:
 
     @staticmethod
     def info():
-        return dir(Parallelepiped)
+        return print(dir(Parallelepiped))
 
 figure = Parallelepiped(10, 15, 20)
 print(f"Volume = {figure.get_volume()}, Base square = {figure.get_base_square()}, Side square = {figure.get_side_square()}")
-print(f"Methods: {Parallelepiped.info()}")
+Parallelepiped.info()
